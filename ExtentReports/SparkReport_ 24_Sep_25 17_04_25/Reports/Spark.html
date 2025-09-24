@@ -1,0 +1,882 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 24, 2025 05:04:25 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Contactstab</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Client Dashboard</p>
+            <p class="text-sm">
+              <span>5:04:28 PM</span> / <span>00:01:02:438</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Client Dashboard</h5>
+<span class='badge badge-success'>09.24.2025 5:04:28 PM</span>
+<span class='badge badge-danger'>09.24.2025 5:05:30 PM</span>
+<span class='badge badge-default'>00:01:02:438</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>  <div class="mt-4">  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>31:02:433</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="2"><span>Verify suppliers tab in contacts</span></a>
+            <div class="node-attr">
+<span class="badge badge-pill badge-default">@Contactstab</span>            </div>
+          </div>
+        </div>
+  <div class="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:021</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="5"><span>Given Launch the browser</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <p>com.Capium.stepDefinations.CapiumLoginDef_file.launch_the_browser()</p>
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:28 PM</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:03:343</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="7"><span>And User need to enter the Application Url</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <p>com.Capium.stepDefinations.CapiumLoginDef_file.user_need_to_enter_the_application_url()</p>
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:31 PM</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:218</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="9"><span>When User Enter username and Password</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <p>com.Capium.stepDefinations.CapiumLoginDef_file.user_enter_username_and_password()</p>
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:32 PM</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:05:102</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="11"><span>Then User Click on login button</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <p>com.Capium.stepDefinations.CapiumLoginDef_file.user_click_on_login_button()</p>
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:37 PM</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:41:051</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="13"><span>And redirect to Bookkeeping module</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <p>com.Capium.stepDefinations.CapiumLoginDef_file.redirect_to_bookkeeping_module()</p>
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:18 PM</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge fail-bg log ">Fail</span></li>
+              <li><span class='badge badge-default'>30:11:151</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="15"><span>Given Click on suppliers in contacts</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card-body">
+            <p>com.Capium.stepDefinations.Bookkepping_Contacts_Stepdef.click_on_suppliers_in_contacts()</p>
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:05:30 PM</td>
+        <td>
+          <textarea readonly class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //input[@placeholder='Search here...'] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.129, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53255}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53255/devtoo..., se:cdpVersion: 140.0.7339.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 13b3c30157513d2950b8f6989c4bd770
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.Capium.Utilites.HelperClass.waitUntilVisible(HelperClass.java:111)
+	at com.Capium.Utilites.HelperClass.clickUsingJS(HelperClass.java:267)
+	at com.Capium.Actions.Bookkeeping_Contacts_Actions.supplierstabincontacts(Bookkeeping_Contacts_Actions.java:715)
+	at com.Capium.stepDefinations.Bookkepping_Contacts_Stepdef.click_on_suppliers_in_contacts(Bookkepping_Contacts_Stepdef.java:165)
+	at ✽.Click on suppliers in contacts(file:///D:/Bookkeeping_5.0/Bookkeeping_5.0/Bookkeeping_5.0/src/test/resources/Feature_CapiumPurchase/BK_Contacts.feature:106)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:134</span></li>
+              <li><span><i class="fa fa-paperclip"></i></span></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="16"><span>com.Capium.stepDefinations.Hooks.afterStep(io.cucumber.java.Scenario)</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <p>AFTER_STEP</p>
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>5:05:30 PM</td>
+        <td>
+          redirect to Bookkeeping module
+    <div class="row mb-3"><div class="col-md-3">
+        <a href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAMgCAIAAABNk+hsAAAQAElEQVR4nOzde4yX1Z348S8wIDI4MAzMDFTuItcZHRDkUlEoAsrF4m4FFRsbq6tJG/fe3XbTdDexyaZpN7ttE7pFTWPVWrtorasICBQUFBSE4TIw3O8MtxmHYbhZfmfnGwm/VaiXfjYZ5vX64+Sc85znGf8k7zw+35yZM2dmAAAAAADgTy0nAwAAAAAAAQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgCATIsWLfLy8q666qrWrVvX19efOHEiO2YAAIDPQYAGAKAp6tWrV1lZ2cCBA1N0Tum5TZs2H3tsY4MdO3Zs3769uro6AwAAfBoCNAAATUVubm7//v0HDBhw/fXXd+rUKdPQl3fu3Pl+g5qamjSePHkyxeh0Mo0pTHft2nXMmDH5+fnp8DvvvPPuu++mMZ3JAAAAn0CzmTNnZgAA4HJ36623Tpo0qaCgIM3fe++91JFXr16divMnubewsLBfv34jRowYNGjQ0aNHU4Z+/fXX9+7dmwEAAC5JgAYA4DKXqnFKz2ncvn370qVLU3c+fPjw+au5ubnFxcVFDdKkXbt2tbW1dQ127Nixc+fOqqqq84cHDhyYMvTNN99cX1//6quvzp07N00yAADARQjQAABctgoKClJ6vvXWW1N6Xrx48cKFC89f6tevX2lp6ZAhQ7p06ZLdOX78eHV19alTp1KGTlX6/MkUoDdv3rxy5cpVq1Zld3r27HnLLbeMHTt2z549KUMvWbIkAwAAfBwBGgCAy9ONN944ffr0lJUvTM9lZWVDhw4dOHBghw4dKisr33vvvY0bN6bufOzYsbNnz56/Nz8/v6ioqHPnzilGp7F///6tW7fevXt3ytBvvPHGoUOHMg0ZesKECaNGjVq+fPlvf/tbX+QAAICPEqABALgMzZgxY9KkSb///e9nz56d3UnpecyYMWlcu3btmjVr0njgwIFP+LSCgoKUrYcNG9anT58TJ04sWbJk6dKlu3btSpduv/32u+++u7a2NjXo1157LQMAAFxAgAYA4HLzj//4jwMGDHj55Zefe+65zAXpecOGDQsWLFi5cuX5k4WFhaWlpV/4whdSYs7Pz+/QoUPr1q0PHjyY2nRVVdWRI0cOHTq0cePGU6dOZc8PHDhwaIO8vLz08PQnMg3fmL733nuvvvrqZ5999pVXXskAAAAfEqABALis/PznP08R+cc//vGKFSvSctq0aXfeeee2bdtSel66dGn2TIrOffv2LSkp6dmzZ1qeOHHiyIfq6upSiW7fvn12bNu2bWrQKxqkh2RvLy4uvu+++9JD0mbK0ClVp52HHnqoT58+jz/++OLFizMAAEADARoAgMvHY4891q1bt4cffjh15LR89NFHb7jhhkWLFj3xxBPZA6k4T5w4ceTIkWm+bt269xocPHjwYg9s167dTTfdNGrUqKuvvnrNmjVvv/32+YqdGvT48eMPHDiQonNFRUXa+bu/+7tUpX/605++9dZbGQAAIJNpkf6JnAEAgMbv3nvvHTJkyF/91V/V1NSk5Q9/+MM+ffq8+OKLzzzzTKbhdwWnTZv29a9/vXXr1q+++uqTTz752muvbd26NZuqCwsLe/ToUVJSkv19wnTmgw8+ONVg8+bNr7/+ejrZsWPHO++8s3v3P2UWlQAAEABJREFU7vv27Ut/Yu3atbt37x43btzo0aM3btx4+PDhZcuWpRunTJmyYcOG6urqDAAANHnegAYA4HIwceLEFKB/9KMfrV69Oi1nzZqVm5v7L//yL5WVlZmGz0Cnq6kmL2lQX1+fNlOe7t27d4rOF3snI0XkdHjVqlWpPmd30smpU6d27dr1hRdemDt3bnbzn//5n3v16vUP//APe/fuTctvfetbLVq0+MEPfnDmzJkMAAA0bQI0AACN3qhRox5++OHzvwr4yCOPjBw58sEHHzx58mRajh079mtf+9qKFSt+/OMfZ89ff/31U6ZMufbaa9N8z54969evT2P2hwdramquuuqqtg2GDBkyePDgwsLCFKBTiV64cGH29tSg0+3prl//+tf79u1LO//xH/+Rn5+fbdCdOnX63ve+l/7cL37xiwwAADRtPsEBAEDj1rFjx29+85vvvvtu9lMbkyZNuu222x577LEUlNPyjjvuuPfee8/X54KCgunTp6ed999//7//+7/TLS+88MLatWt37Nhx+PDh+vr6c+fOpWydrqZleXn5vHnz0qUuXbqkZ5aVlTVr1mz79u2bNm1Kt6Q/NHDgwHfeeef06dNvvvlmWvbr16+ioiL93ePHj3/lK19JOXv37t0ZAABowgRoAAAat2nTpg0aNGj27NnV1dVf/OIX77///qeffjr7M4ApGT/wwAOvvPLK448/npbDhg175JFH2rZt++KLLz7xxBNbt26tra39o89PQXn58uUpQ3fu3Dll6B49eqT6nPJ0KtFTpkzp2rVrunrq1KnKysrbb789Pz8//emdO3em/RtvvDGF73QpAwAATZUADQBAI9azZ8+UmBc1aN++ffZV6F/96lfpUt++fb/1rW/NmTPn+eefT8vx48c/+OCD69ev/9d//dfUjjOfUjZDnz59euzYsddee+2GDRt2795dUVFx1113FRQUrFq1qqqqKrXm9Ffq6+u3bNmSlqlWX3HFFWvWrMkAAEBTJUADANCITZ8+vXv37k8++WR1dXUKviUlJbNnz66pqenWrdtf//Vfz58//7/+67/SsVtvvfWrX/3qhZ+B/mwqKytTdB42bNiIESOWLVuWqvTGjRvvu+++nJyclKTT1aKiojFjxqxdu3bnzp3NmzefPHlyOnD48OEMAAA0Sc0zAADQOJWWln7xi19cuHDh9u3b27dvP3bs2AULFqTym2kI09kfCUzzfv36pfo8Z86cz1mfs1KA/slPfnL8+PF27dpll4899ljXrl2zV1PvPnr0aJs2bdL8hRdemDt3bgYAAJqwnAwAADROI0aMSOPixYvTOGbMmJYtW6YAneajR4/u37//9773vTTv1q3b3/zN36T6nHJw5k9k79693//+988vU4PeunVrdn7o0KGUp9OB7PLpp5/OAABAEyZAAwDQKDVr1qykpKS8vHz79u1XXXXV2LFj58+ff/DgwVatWk2YMCGV6F27dqVjd99996pVq/6E9fljnTlz5vz8fH0GAAAEaAAAGqWysrJ27dqtW7cuzQcPHty+fftly5al+cSJE/Pz81OMTvNUogcNGvTd7373jz6tefPmxcXFeXl5qV+fO3eurq7uyJEjNTU1GQAA4HMQoAEAaJSuu+66NK5cuTKNQ4YM2bRp0/79+9P8pptuSvX50KFD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0KZNm69//evZT3ZkPr3hw4c/+OCDI0aMeOqpp371q19lGupzitGPP/74G2+8kZZ/+Zd/mYrzz372s+rq6okTJ06YMGHOnDlbtmzJAABAUyVAAwDQuJ08eTKl3mxW3rRpU8rEZWVl8+bNS5def/31OxssWbKkvr6+vLw8bd51111Dhgxp1qzZJ8/QKTrfc889kydPTmV51qxZb731VubD+vzLX/4y/ZW0fPTRR9M/rZ9++unVq1enDv7QQw/t2LEjtekMAAA0YQI0AACN2969e1PwHTdu3NatW3fv3p2y7+233z5o0KAUnTMN3+Lo27fvV7/61fXr1x85cqSiomLt2rVdu3adNGnSzTff3LNnzzZt2qT906dPf/TJvXr1So+dPn36+PHjU7B+8cUXU1CuqqrKycm54447Un1+/vnnX3nllXQyPf+mm25K1fu3v/1tWn7ta1/r3r37M888k/7bMgAA0IQ1mzlzZgYAABqzvLy873znO61atfr7v//7M2fOjBo16uGHH54zZ0724xvJPffcc9tttz355JNLly5NB9LO6NGjBw8e3L9//xSg0/Lo0aMHG9TU1OQ16Ny5c5cuXdKlzZs3r1u3bv78+cePH0/LdNfUqVM7duz4m9/8ZvHixWnnxhtv/MY3vpG69g9+8IO0vPfeeydOnDh37tynn346AwAATZs3oAEAaPROnTq1devWSZMmlZSUpCi8e/futHnnnXcWFxe/8847aZ79+MaXv/zlESNGXHHFFQcOHKisrHzrrbdefvnljRs3Hj58uL6+vm3btr179x44cGA6kJbbt29fsGDBL37xi3nz5lVUVJw+fbqgoGDGjBmpZe/cufNnP/tZKs7pmePHj3/wwQfT87P1uays7L777lu5cuXs2bMzAADQ5HkDGgCAy8QNN9zw6KOPvvnmm7NmzUrLvn37/tM//VMK06kF79mzJ+106dJl4sSJY8aMOXbs2KpVqzZs2LBixYo/+ticnJyRI0emtD1o0KAUqZ9//vmXXnop7bdr1+6hhx4qLS09/6p169atf/7zn6ei/f3vfz8DAAAI0AAAXE4mTJiQ/n17/vMXnTt3/ou/+Ivi4uLnnntu0aJF2TMDBgxIGfq6665r3rz5yZMn165du3nz5iMfqq+vb9++fYcOHfIb9OnTp6ysLDXoysrK1Kzffffd/fv3p4dkv/KRJufrczr53e9+N535t3/7twwAANBAgAYA4LKS/SJzKsU/+clPzp49m5ub+8ADDwwdOjRV5gULFixfvjx7LFXmkpKS0tLSNKYzH/uo2traqqqqNWvWrFix4vzPCV577bU333zz6NGjU5J+6aWX3nvvvbT5pS996f7770+N+4knnsgAAAAfEqABALjcFBUV/e3f/vN6I+gAABAASURBVO3p06f/8z//c+fOnZmGTzOPGTMmjWvXrn399ddXrVp14fm8vLzsK88FBQWtW7dO0fngwYNprK+vv/DY8OHDR4wYMXjw4Orq6oULF6b6/MEHH6TzM2bMSAH67bffTsk7AwAAXECABgDgMpSTk3P//fcPHTr0ueeeS7E4u3k+Qx87dmz9+vWrV6/+JN+ATnl61KhRI0eO7NGjRzY9L1q0KE0yDZ/duPvuu9P461//+ne/+10GAAD4/wnQAABctqZNmzZ58uS9e/cuXrz4fIbu1avXoAb9+/c/e/bsxo0bU01OSbq6walTpzp27NipU6cOH8rPz2/ZsmV5efnKlSvfeeed2tra9JA2bdrceuut6eH79u1L9Tnl7AwAAPARAjQAAJez7t27p0w8fPjw7du3X5ihk9zc3Ouuu653797FxcWFhYVp/F/37t+/f1uDLVu2pPH8fkrP48ePLygomDt37ksvvXTy5MkMAADwcQRoAAAufylApwydYnRVVVV5efmaNWtWr1790WOpQefl5R1vUFdX98EHH1x4tbS0NAXrNKZjb775ZqrPO3bsyAAAABcnQAMA0CS0atVq0qRJJSUlffr0Scvq6upVq1YtX768tra2pqYmFeeP3tK6devevXv36tXr6quvTmPqzgcOHFi7dm3q12nMAAAAf4wADQBA09K5c+frr7++tLR00KBB5zfPnTtX0+DUqVNt2rTJzc298sorU4DOXq2srNy6dWt5ebnuDAAAn4oADQBAE9WyZcu+ffvmNWjbtm12csUVV9TX1584cSI7bmmQ5hkAAODTy8kAAECTdObMmXXr1mUAAIAwAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMA0BR16tSpoKCgrq5u9+7dn/CW9u3bFxcXnzp1avv27X/awwAAcLkSoAEAaFp69uz5la98ZeDAgdllVVXVSy+9tHTp0kvcUlRUNGPGjBtuuCG7fP/9919++eVXX3318x8GAIDLW4vS0tIMAAA0Dddcc823v/3t4uLi8zu5ubmDBw8+ffp0ZWXlx95SWFj4ne98p3fv3ud3rrjiipKSkiuvvLK8vPzzHAYAgMte8wwAADQZd999d8uWLT+6P3369Aur9IVmzJjRoUOHj+7fdtttAwYM+DyHAQDgsidAAwDQVPTs2fOaa6652NVhw4Z9dDMvL2/o0KEXu2X48OGf+TAAADQFvgENAEBTUVRUdImrnTt3/py3fIbnAwDA5U2ABgCA/9GsWbNPuHle8+bNP/NhAABoCgRoAACaipMnT17i6okTJz7nLZ/h+QAAcHnzFgYAAE3F5s2bz507d7GrmzZt+ujmrl27jh49erFbNm7c+JkPAwBAUyBAAwDQVJw4ceLll1/+2EupTb/99tsfe+lit1RVVc2bN+/zHAYAgMtei9LS0gwAADQNGzZsyM/P79Gjx4WbW7dunTVr1sU+kbFt27aWLVv27dv3ws2DBw/+9Kc//ej7zp/qMAAAXPaazZw5MwMAAE1JaWnpDTfc0KlTp7q6uvXr1y9atOiP3pKa8vDhw7t06XLy5MmNGzfOnz//gw8++JMcBgCAy5gADQAAAABAiJwMAAAAAAAEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAOKqY1AAAAQklEQVQAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEOL/AQAA//9LdY4FAAAABklEQVQDAHHDtWQlZXsyAAAAAElFTkSuQmCC" data-featherlight="image"><span class="badge badge-gradient-primary">base64 img</span></a>
+        
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:30 PM</td>
+        <td>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge skip-bg log ">Skip</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="17"><span>And Click on add supplier and validate</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <p>com.Capium.stepDefinations.Bookkepping_Contacts_Stepdef.click_on_add_supplier_and_validate()</p>
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:05:30 PM</td>
+        <td>
+          Step skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge skip-bg log ">Skip</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="19"><span>Then Enter mandatory fields in suppliers</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="card-body">
+            <p>com.Capium.stepDefinations.Bookkepping_Contacts_Stepdef.enter_mandatory_fields_in_suppliers()</p>
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>5:05:30 PM</td>
+        <td>
+          Step skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <div class="card-toolbar node-info">
+            <ul class="list-inline d-none d-sm-block">
+              <li><span class="badge pass-bg log ">Pass</span></li>
+              <li><span class='badge badge-default'>30:00:000</span></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="card-title">
+            <a class="node " id="21"><span>com.Capium.stepDefinations.Hooks.afterScenario(io.cucumber.java.Scenario)</span></a>
+            <div class="node-attr">
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+      </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Scenario: Verify suppliers tab in contacts</p>
+            <p class="text-sm">
+              <span>5:04:28 PM</span> / <span>00:01:02:426</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Scenario: Verify suppliers tab in contacts</h5>
+<span class='badge badge-success'>09.24.2025 5:04:28 PM</span>
+<span class='badge badge-danger'>09.24.2025 5:05:30 PM</span>
+<span class='badge badge-default'>00:01:02:426</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:28 PM</td>
+        <td>
+          Launch the browser
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:32 PM</td>
+        <td>
+          User need to enter the Application Url
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:32 PM</td>
+        <td>
+          User Enter username and Password
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:04:37 PM</td>
+        <td>
+          User Click on login button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>5:05:19 PM</td>
+        <td>
+          redirect to Bookkeeping module
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:05:30 PM</td>
+        <td>
+          redirect to Bookkeeping module
+    <div class="row mb-3"><div class="col-md-3">
+        <a href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAAMgCAIAAABNk+hsAAAQAElEQVR4nOzde4yX1Z348S8wIDI4MAzMDFTuItcZHRDkUlEoAsrF4m4FFRsbq6tJG/fe3XbTdDexyaZpN7ttE7pFTWPVWrtorasICBQUFBSE4TIw3O8MtxmHYbhZfmfnGwm/VaiXfjYZ5vX64+Sc85znGf8k7zw+35yZM2dmAAAAAADgTy0nAwAAAAAAAQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgCATIsWLfLy8q666qrWrVvX19efOHEiO2YAAIDPQYAGAKAp6tWrV1lZ2cCBA1N0Tum5TZs2H3tsY4MdO3Zs3769uro6AwAAfBoCNAAATUVubm7//v0HDBhw/fXXd+rUKdPQl3fu3Pl+g5qamjSePHkyxeh0Mo0pTHft2nXMmDH5+fnp8DvvvPPuu++mMZ3JAAAAn0CzmTNnZgAA4HJ36623Tpo0qaCgIM3fe++91JFXr16divMnubewsLBfv34jRowYNGjQ0aNHU4Z+/fXX9+7dmwEAAC5JgAYA4DKXqnFKz2ncvn370qVLU3c+fPjw+au5ubnFxcVFDdKkXbt2tbW1dQ127Nixc+fOqqqq84cHDhyYMvTNN99cX1//6quvzp07N00yAADARQjQAABctgoKClJ6vvXWW1N6Xrx48cKFC89f6tevX2lp6ZAhQ7p06ZLdOX78eHV19alTp1KGTlX6/MkUoDdv3rxy5cpVq1Zld3r27HnLLbeMHTt2z549KUMvWbIkAwAAfBwBGgCAy9ONN944ffr0lJUvTM9lZWVDhw4dOHBghw4dKisr33vvvY0bN6bufOzYsbNnz56/Nz8/v6ioqHPnzilGp7F///6tW7fevXt3ytBvvPHGoUOHMg0ZesKECaNGjVq+fPlvf/tbX+QAAICPEqABALgMzZgxY9KkSb///e9nz56d3UnpecyYMWlcu3btmjVr0njgwIFP+LSCgoKUrYcNG9anT58TJ04sWbJk6dKlu3btSpduv/32u+++u7a2NjXo1157LQMAAFxAgAYA4HLzj//4jwMGDHj55Zefe+65zAXpecOGDQsWLFi5cuX5k4WFhaWlpV/4whdSYs7Pz+/QoUPr1q0PHjyY2nRVVdWRI0cOHTq0cePGU6dOZc8PHDhwaIO8vLz08PQnMg3fmL733nuvvvrqZ5999pVXXskAAAAfEqABALis/PznP08R+cc//vGKFSvSctq0aXfeeee2bdtSel66dGn2TIrOffv2LSkp6dmzZ1qeOHHiyIfq6upSiW7fvn12bNu2bWrQKxqkh2RvLy4uvu+++9JD0mbK0ClVp52HHnqoT58+jz/++OLFizMAAEADARoAgMvHY4891q1bt4cffjh15LR89NFHb7jhhkWLFj3xxBPZA6k4T5w4ceTIkWm+bt269xocPHjwYg9s167dTTfdNGrUqKuvvnrNmjVvv/32+YqdGvT48eMPHDiQonNFRUXa+bu/+7tUpX/605++9dZbGQAAIJNpkf6JnAEAgMbv3nvvHTJkyF/91V/V1NSk5Q9/+MM+ffq8+OKLzzzzTKbhdwWnTZv29a9/vXXr1q+++uqTTz752muvbd26NZuqCwsLe/ToUVJSkv19wnTmgw8+ONVg8+bNr7/+ejrZsWPHO++8s3v3P2UWlQAAEABJREFU7vv27Ut/Yu3atbt37x43btzo0aM3btx4+PDhZcuWpRunTJmyYcOG6urqDAAANHnegAYA4HIwceLEFKB/9KMfrV69Oi1nzZqVm5v7L//yL5WVlZmGz0Cnq6kmL2lQX1+fNlOe7t27d4rOF3snI0XkdHjVqlWpPmd30smpU6d27dr1hRdemDt3bnbzn//5n3v16vUP//APe/fuTctvfetbLVq0+MEPfnDmzJkMAAA0bQI0AACN3qhRox5++OHzvwr4yCOPjBw58sEHHzx58mRajh079mtf+9qKFSt+/OMfZ89ff/31U6ZMufbaa9N8z54969evT2P2hwdramquuuqqtg2GDBkyePDgwsLCFKBTiV64cGH29tSg0+3prl//+tf79u1LO//xH/+Rn5+fbdCdOnX63ve+l/7cL37xiwwAADRtPsEBAEDj1rFjx29+85vvvvtu9lMbkyZNuu222x577LEUlNPyjjvuuPfee8/X54KCgunTp6ed999//7//+7/TLS+88MLatWt37Nhx+PDh+vr6c+fOpWydrqZleXn5vHnz0qUuXbqkZ5aVlTVr1mz79u2bNm1Kt6Q/NHDgwHfeeef06dNvvvlmWvbr16+ioiL93ePHj3/lK19JOXv37t0ZAABowgRoAAAat2nTpg0aNGj27NnV1dVf/OIX77///qeffjr7M4ApGT/wwAOvvPLK448/npbDhg175JFH2rZt++KLLz7xxBNbt26tra39o89PQXn58uUpQ3fu3Dll6B49eqT6nPJ0KtFTpkzp2rVrunrq1KnKysrbb789Pz8//emdO3em/RtvvDGF73QpAwAATZUADQBAI9azZ8+UmBc1aN++ffZV6F/96lfpUt++fb/1rW/NmTPn+eefT8vx48c/+OCD69ev/9d//dfUjjOfUjZDnz59euzYsddee+2GDRt2795dUVFx1113FRQUrFq1qqqqKrXm9Ffq6+u3bNmSlqlWX3HFFWvWrMkAAEBTJUADANCITZ8+vXv37k8++WR1dXUKviUlJbNnz66pqenWrdtf//Vfz58//7/+67/SsVtvvfWrX/3qhZ+B/mwqKytTdB42bNiIESOWLVuWqvTGjRvvu+++nJyclKTT1aKiojFjxqxdu3bnzp3NmzefPHlyOnD48OEMAAA0Sc0zAADQOJWWln7xi19cuHDh9u3b27dvP3bs2AULFqTym2kI09kfCUzzfv36pfo8Z86cz1mfs1KA/slPfnL8+PF27dpll4899ljXrl2zV1PvPnr0aJs2bdL8hRdemDt3bgYAAJqwnAwAADROI0aMSOPixYvTOGbMmJYtW6YAneajR4/u37//9773vTTv1q3b3/zN36T6nHJw5k9k79693//+988vU4PeunVrdn7o0KGUp9OB7PLpp5/OAABAEyZAAwDQKDVr1qykpKS8vHz79u1XXXXV2LFj58+ff/DgwVatWk2YMCGV6F27dqVjd99996pVq/6E9fljnTlz5vz8fH0GAAAEaAAAGqWysrJ27dqtW7cuzQcPHty+fftly5al+cSJE/Pz81OMTvNUogcNGvTd7373jz6tefPmxcXFeXl5qV+fO3eurq7uyJEjNTU1GQAA4HMQoAEAaJSuu+66NK5cuTKNQ4YM2bRp0/79+9P8pptuSvX50KFD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0KZNm69//evZT3ZkPr3hw4c/+OCDI0aMeOqpp371q19lGupzitGPP/74G2+8kZZ/+Zd/mYrzz372s+rq6okTJ06YMGHOnDlbtmzJAABAUyVAAwDQuJ08eTKl3mxW3rRpU8rEZWVl8+bNS5def/31OxssWbKkvr6+vLw8bd51111Dhgxp1qzZJ8/QKTrfc889kydPTmV51qxZb731VubD+vzLX/4y/ZW0fPTRR9M/rZ9++unVq1enDv7QQw/t2LEjtekMAAA0YQI0AACN2969e1PwHTdu3NatW3fv3p2y7+233z5o0KAUnTMN3+Lo27fvV7/61fXr1x85cqSiomLt2rVdu3adNGnSzTff3LNnzzZt2qT906dPf/TJvXr1So+dPn36+PHjU7B+8cUXU1CuqqrKycm54447Un1+/vnnX3nllXQyPf+mm25K1fu3v/1tWn7ta1/r3r37M888k/7bMgAA0IQ1mzlzZgYAABqzvLy873znO61atfr7v//7M2fOjBo16uGHH54zZ0724xvJPffcc9tttz355JNLly5NB9LO6NGjBw8e3L9//xSg0/Lo0aMHG9TU1OQ16Ny5c5cuXdKlzZs3r1u3bv78+cePH0/LdNfUqVM7duz4m9/8ZvHixWnnxhtv/MY3vpG69g9+8IO0vPfeeydOnDh37tynn346AwAATZs3oAEAaPROnTq1devWSZMmlZSUpCi8e/futHnnnXcWFxe/8847aZ79+MaXv/zlESNGXHHFFQcOHKisrHzrrbdefvnljRs3Hj58uL6+vm3btr179x44cGA6kJbbt29fsGDBL37xi3nz5lVUVJw+fbqgoGDGjBmpZe/cufNnP/tZKs7pmePHj3/wwQfT87P1uays7L777lu5cuXs2bMzAADQ5HkDGgCAy8QNN9zw6KOPvvnmm7NmzUrLvn37/tM//VMK06kF79mzJ+106dJl4sSJY8aMOXbs2KpVqzZs2LBixYo/+ticnJyRI0emtD1o0KAUqZ9//vmXXnop7bdr1+6hhx4qLS09/6p169atf/7zn6ei/f3vfz8DAAAI0AAAXE4mTJiQ/n17/vMXnTt3/ou/+Ivi4uLnnntu0aJF2TMDBgxIGfq6665r3rz5yZMn165du3nz5iMfqq+vb9++fYcOHfIb9OnTp6ysLDXoysrK1Kzffffd/fv3p4dkv/KRJufrczr53e9+N535t3/7twwAANBAgAYA4LKS/SJzKsU/+clPzp49m5ub+8ADDwwdOjRV5gULFixfvjx7LFXmkpKS0tLSNKYzH/uo2traqqqqNWvWrFix4vzPCV577bU333zz6NGjU5J+6aWX3nvvvbT5pS996f7770+N+4knnsgAAAAfEqABALjcFBUV/e3f/vN6I+gAABAASURBVO3p06f/8z//c+fOnZmGTzOPGTMmjWvXrn399ddXrVp14fm8vLzsK88FBQWtW7dO0fngwYNprK+vv/DY8OHDR4wYMXjw4Orq6oULF6b6/MEHH6TzM2bMSAH67bffTsk7AwAAXECABgDgMpSTk3P//fcPHTr0ueeeS7E4u3k+Qx87dmz9+vWrV6/+JN+ATnl61KhRI0eO7NGjRzY9L1q0KE0yDZ/duPvuu9P461//+ne/+10GAAD4/wnQAABctqZNmzZ58uS9e/cuXrz4fIbu1avXoAb9+/c/e/bsxo0bU01OSbq6walTpzp27NipU6cOH8rPz2/ZsmV5efnKlSvfeeed2tra9JA2bdrceuut6eH79u1L9Tnl7AwAAPARAjQAAJez7t27p0w8fPjw7du3X5ihk9zc3Ouuu653797FxcWFhYVp/F/37t+/f1uDLVu2pPH8fkrP48ePLygomDt37ksvvXTy5MkMAADwcQRoAAAufylApwydYnRVVVV5efmaNWtWr1790WOpQefl5R1vUFdX98EHH1x4tbS0NAXrNKZjb775ZqrPO3bsyAAAABcnQAMA0CS0atVq0qRJJSUlffr0Scvq6upVq1YtX768tra2pqYmFeeP3tK6devevXv36tXr6quvTmPqzgcOHFi7dm3q12nMAAAAf4wADQBA09K5c+frr7++tLR00KBB5zfPnTtX0+DUqVNt2rTJzc298sorU4DOXq2srNy6dWt5ebnuDAAAn4oADQBAE9WyZcu+ffvmNWjbtm12csUVV9TX1584cSI7bmmQ5hkAAODTy8kAAECTdObMmXXr1mUAAIAwAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMA0BR16tSpoKCgrq5u9+7dn/CW9u3bFxcXnzp1avv27X/awwAAcLkSoAEAaFp69uz5la98ZeDAgdllVVXVSy+9tHTp0kvcUlRUNGPGjBtuuCG7fP/9919++eVXX3318x8GAIDLW4vS0tIMAAA0Dddcc823v/3t4uLi8zu5ubmDBw8+ffp0ZWXlx95SWFj4ne98p3fv3ud3rrjiipKSkiuvvLK8vPzzHAYAgMte8wwAADQZd999d8uWLT+6P3369Aur9IVmzJjRoUOHj+7fdtttAwYM+DyHAQDgsidAAwDQVPTs2fOaa6652NVhw4Z9dDMvL2/o0KEXu2X48OGf+TAAADQFvgENAEBTUVRUdImrnTt3/py3fIbnAwDA5U2ABgCA/9GsWbNPuHle8+bNP/NhAABoCgRoAACaipMnT17i6okTJz7nLZ/h+QAAcHnzFgYAAE3F5s2bz507d7GrmzZt+ujmrl27jh49erFbNm7c+JkPAwBAUyBAAwDQVJw4ceLll1/+2EupTb/99tsfe+lit1RVVc2bN+/zHAYAgMtei9LS0gwAADQNGzZsyM/P79Gjx4WbW7dunTVr1sU+kbFt27aWLVv27dv3ws2DBw/+9Kc//ej7zp/qMAAAXPaazZw5MwMAAE1JaWnpDTfc0KlTp7q6uvXr1y9atOiP3pKa8vDhw7t06XLy5MmNGzfOnz//gw8++JMcBgCAy5gADQAAAABAiJwMAAAAAAAEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEEKABgAAAAAghAANAAAAAEAIARoAAAAAgBACNAAAAAAAIQRoAAAAAABCCNAAAAAAAIQQoAEAAAAACCFAAwAAAAAQQoAGAAAAACCEAA0AAAAAQAgBGgAAAACAEAI0AAAAAAAhBGgAAAAAAEII0AAAAAAAhBCgAQAAAAAIIUADAAAAABBCgAYAAAAOKqY1AAAAQklEQVQAIIQADQAAAABACAEaAAAAAIAQAjQAAAAAACEEaAAAAAAAQgjQAAAAAACEEKABAAAAAAghQAMAAAAAEOL/AQAA//9LdY4FAAAABklEQVQDAHHDtWQlZXsyAAAAAElFTkSuQmCC" data-featherlight="image"><span class="badge badge-gradient-primary">base64 img</span></a>
+        
+    </div></div>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>5:05:30 PM</td>
+        <td>
+          Scenario Failed.
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:05:19 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>Given Click on suppliers in contacts</a>
+<div class="">
+<span class="badge badge-default">Client Dashboard.Verify suppliers tab in contacts.Given Click on suppliers in contacts</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Contactstab</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Contactstab</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>17:04:28 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Verify suppliers tab in contacts</a>
+<div class="">
+<span class="badge badge-default">Client Dashboard.Verify suppliers tab in contacts</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 24, 2025 05:04:25 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 24, 2025 05:05:36 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>2</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-3">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>2</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div>
+<small data-tooltip='100%'><b>1</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title"></h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='70%'><b>7</b> passed</small></div>
+<div>
+<small data-tooltip='10%'><b>1</b> failed,
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='64%'><b>11</b> events passed</small></div>
+<div>
+<small data-tooltip='17%'><b>3</b> events failed,
+<b data-tooltip='%'>3</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Client Dashboard":62.438,"Scenario: Verify suppliers tab in contacts":62.426
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Contactstab</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Engineer</td>
+<td>Anwar</td>
+</tr>
+<tr>
+<td>Project</td>
+<td>CucumberProjectDemo</td>
+</tr>
+<tr>
+<td>Browser</td>
+<td>Google Chrome</td>
+</tr>
+<tr>
+<td>os</td>
+<td>windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 2,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 7,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 2,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 11,
+failEvents: 3,
+warningEvents: 0,
+skipEvents: 2,
+infoEvents: 1
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
